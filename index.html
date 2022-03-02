@@ -18,23 +18,22 @@
 </head>
 <body>
 
+    
     <div class="row text-center">
-        <div id="calculatortext" class="col">
-            CALCULATOR
-        </div>
         <div class="col">
-            <button id="darkbutton" onclick="changemode()"><i class="fa-solid fa-moon"></i>Mode</button>
+            <button id="darkbutton" onclick="changemode();changetext()"><i class="fa-solid fa-moon"></i>Dark Mode</button>
         </div>
     </div>
    
     <div id="mainBox" class="container my-2">
+        <span class="mx-5">A Scientific Calculator Created By Ankit Singh</span>
     <form class="calculatorform" name="calculatorform"> 
         <div class="row">
           <div id="inputBox" class="col">
                 <input name="screen" class="screen my-5 mx-2" type="text">
           </div>
         </div>
-        <hr>
+        <hr id="line">
         <div class="row my-2">
             <div class="col">
              <button type='button' class="button" value="(" name="openbracket" onclick="valueButton(this);">(</button>
@@ -92,4 +91,7 @@
      </div>
     </form> 
 </body>
+<script>
+    navigator.onLine;
+</script>
 </html>

@@ -13,5 +13,17 @@ function Calculate(){
 function changemode() {
     var body = document.body
     body.classList.toggle("darkmode")
+    var button = document.getElementsByClassName("button")
+    button.classList.toggle("darkbutton")
 }
+
+function changetext(){
+    var x = document.getElementsByClassName("darkmode")
+    if (x.innerHTML === "Dark Mode") {
+        x.innerHTML = "Light Mode";
+      } else {
+        x.innerHTML = "Dark Mode";
+      }
+}
+
 
