@@ -17,13 +17,4 @@ function changemode() {
     button.classList.toggle("darkbutton")
 }
 
-function changetext(){
-    var x = document.getElementsByClassName("darkmode")
-    if (x.innerHTML === "Dark Mode") {
-        x.innerHTML = "Light Mode";
-      } else {
-        x.innerHTML = "Dark Mode";
-      }
-}
-
 
